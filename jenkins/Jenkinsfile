@@ -17,7 +17,7 @@ node() {
         openapi: [filename: "api-spec/swagger.json"],
         environment: [ baseSystemName: "beer-api",
                        privateBaseUrl: params.PRIVATE_BASE_URL,
-                       privateBasePath: "/api",
+                       privateBasePath: "/beer",
                        publicStagingWildcardDomain: params.PUBLIC_STAGING_WILDCARD_DOMAIN,
                        publicProductionWildcardDomain: params.PUBLIC_PRODUCTION_WILDCARD_DOMAIN ],
         toolbox: [ openshiftProject: params.NAMESPACE,
